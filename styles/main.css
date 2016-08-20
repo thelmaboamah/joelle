@@ -14,6 +14,11 @@ main {
 	padding: 0 1em;
 }
 
+#welcome,
+#mobile_nav {
+	display:none;
+}
+
 /********* Font Styles **************/
 
 h1 {
@@ -68,7 +73,6 @@ p {
 
 /*********** Mobile Navigation Styles ********/
 #mobile_nav {
-	display: none;
 	width:100%;
 	height: 100vh;
 	color: #fff;
@@ -152,6 +156,12 @@ section {
 	margin-top: 0;
 }
 
+.fa-twitter {
+	margin-left: .3em;
+}
+
+
+
 /****** Footer *******/
 footer {
 	padding: 3em 0 5px;
@@ -160,3 +170,60 @@ footer {
 footer a {
 	color: #AEBD38;
 }
+
+
+/********* Media Queries **********/
+
+@media (min-width: 768px) {
+
+	/*** General ****/
+	main {
+		width: 780px;
+		margin: 0;
+	}
+
+	.fa-bars, 
+	.main_content {
+		display:none;
+	}
+
+	#welcome {
+		display:block;
+		text-align: center;
+	}
+
+	/***** Fonts *******/
+	body {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+	h2{
+		font-size: 32px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	h4 {
+		font-size: 24px;
+	}
+
+	/****** Navigation *******/
+	
+	#nav_heading {
+		width: 780px;
+		padding-left: 1em;
+	}
+
+	/****** Image *******/
+	img {
+		width: 300px;
+	}
+	
+	/***** Sections *******/
+	
+
+}
+
