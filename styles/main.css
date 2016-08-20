@@ -229,7 +229,7 @@ footer a {
 		padding-left: 1em;
 	}
 
-	nav {
+	#desktop-nav {
 		display:block;
 		width: 250px;
 		position: absolute;
@@ -237,19 +237,19 @@ footer a {
 		left: 62.5%;
 	}
 
-	nav ul {
+	#desktop-nav ul {
 		height: 240px;
 	}
 
-	.nav_item {
+	#desktop-nav .nav_item {
 		height: 25%;
 	}
 
-	.nav_item:hover {
+	#desktop-nav .nav_item:hover {
 		box-shadow: 2px 5px 8px 0px #474747;
 	}
 
-	.nav_item a {
+	#desktop-nav .nav_item a {
 		font-size: 28px;
 	}
 
