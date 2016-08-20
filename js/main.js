@@ -1,19 +1,23 @@
 $(document).ready(function(){
-	// var vw = $(window).width();
+	
+	// $(window).resize()
+	var vw = $(window).width();
 
-	// if(vw <= 768) {
-	// 	console.log('tada!');
-	// }
+	if(vw <= 768) {
+		//Mobile navigation
+		$('.fa-bars').click(function(){
+			$('nav').fadeIn();
+			$('#nav_heading, main, footer').hide();
+		});
+
+		$('.fa-times, .nav_item a').click(function(){
+			$('nav').hide();
+			$('#nav_heading, main, footer').show();
+		});	
+	} else {
+		$('nav').show();
+	};
 
 
-	//Mobile navigation
-	$('.fa-bars').click(function(){
-		$('nav').fadeIn();
-		$('#nav_heading, main, footer').hide();
-	});
-
-	$('.fa-times').click(function(){
-		$('nav').hide();
-		$('#nav_heading, main, footer').show();
-	});
+	
 });
