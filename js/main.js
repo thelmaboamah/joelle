@@ -16,7 +16,7 @@ $(document).ready(function(){
 	$('#desktop-nav a').each(function(){
 		var navId = $(this).attr('href');
 		$(this).click(function(){
-			$('#welcome').hide();
+			$('#welcome, .main_content').hide();
 			$(''+ navId).show();
 		});		
 	});
