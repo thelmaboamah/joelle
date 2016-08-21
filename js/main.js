@@ -12,14 +12,25 @@ $(document).ready(function(){
 	});	
 
 
-	//Desktop navigation
-	$('#desktop-nav a').each(function(){
-		var navId = $(this).attr('href');
-		$(this).click(function(){
-			$('#welcome, .main_content').hide();
-			$(''+ navId).show();
-		});		
+	$(window).resize(function(){
+		var width = $(window).width();
+
+		if (width > 768) {
+			//Desktop navigation
+			$('#desktop-nav a').each(function(){
+				var navId = $(this).attr('href');
+				$(this).click(function(){
+					$('#welcome, .main_content').hide();
+					$(''+ navId).show();
+				});		
+			});
+		} else {
+			$('.main_content').show();
+		}
+
 	});
+	
+	
 
 
 });
