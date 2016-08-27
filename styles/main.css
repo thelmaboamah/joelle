@@ -14,8 +14,9 @@ main {
 	padding: 0 1em;
 }
 
-#welcome,
-nav {
+/*#welcome,
+*/nav,
+.main_content {
 	display:none;
 }
 
@@ -201,8 +202,7 @@ footer a {
 		margin: 0;
 	}
 
-	.fa-bars, 
-	.main_content {
+	.fa-bars  {
 		display:none;
 	}
 
