@@ -3,7 +3,7 @@ $(document).ready(function(){
 	//Desktop navigation
 
 	function dNav() {
-		$('#desktop-nav a').each(function(){
+		$('#desktop-nav a, #mobile-nav a').each(function(){
 			var navId = $(this).attr('href');
 			$(this).click(function(){
 				$('#welcome, .main_content').hide();
