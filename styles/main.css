@@ -14,8 +14,7 @@ main {
 	padding: 0 1em;
 }
 
-/*#welcome,
-*/nav,
+nav,
 .main_content {
 	display:none;
 }
@@ -162,6 +161,10 @@ section {
 	padding: 1em;
 }
 
+#welcome {
+		text-align: center;
+	}
+
 #resume span {
 	margin-left: .5em;
 }
@@ -204,11 +207,6 @@ footer a {
 
 	.fa-bars  {
 		display:none;
-	}
-
-	#welcome {
-		display:block;
-		text-align: center;
 	}
 
 	/***** Fonts *******/
