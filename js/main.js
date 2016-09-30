@@ -29,9 +29,5 @@ $(document).ready(function(){
 	dNav();
 	mNav();
 
-	//Dealing with wrong content showing upon window resizing
-	
-		// Need to add code that listens for when the page resizes and activates
-		// the correct navigation behavior
 
 });
